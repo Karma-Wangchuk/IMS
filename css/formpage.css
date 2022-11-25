@@ -1,0 +1,30 @@
+body{
+    background-color: #82a0bc;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    background-color: #a7cced;
+    width: 80%;
+    padding: 40px;
+    margin: 30px 40px;
+    border-radius: 20px;
+}
+.form a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+.form:hover{
+    transition: 0.4s linear;
+    transform: scale(1.04);
+    cursor: pointer;
+    background-color: #304d6d;
+}
+.form a:hover{
+    color: aliceblue;
+    transition: 0.4s linear;
+}

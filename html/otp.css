@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: #080710;
+}
+.background{
+  width: 430px;
+  height: 100%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:first-child{
+  background: linear-gradient(
+      #1845ad,
+      #23a2f6
+  );
+  left: -80px;
+  top: -10px;
+}
+.shape:last-child{
+  background: linear-gradient(
+      to right,
+      #df2c08,
+      #d89c4a
+  );
+  right: -30px;
+  bottom: -80px;
+}
+
+.login-box {
+  height: 700;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.form {
+  font-family: 'Poppins',sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form h1 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+}
+
+.form h3 {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.inputBox {
+  position: relative;
+  width: 90%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Input Field Designs */
+.inputBox input {
+  width: 50px;
+  text-align: center;
+  padding: 1em;
+  border: 1px solid #3b4354;
+  border-radius: 5px;
+  outline: none;
+  color: #000000;
+  font-size: 0.95rem;
+  transition: 0.1s;
+}
+
+/* SubmitBtn */
+.submit-btn,
+.redirect {
+  margin: auto;
+  margin-top: 2rem;
+  width: 90%;
+  padding: 0.8em 1.6em;
+  background-color: #3b4354;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover,
+.redirect:hover {
+  background-color: #414753;
+  transition: 0.2s;
+}
+
+.redirect {
+  display: none;
+}
+
+/* Other Options */
+.form a {
+  text-decoration: none;
+  color: #7f858a;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+
+.passwd {
+  text-align: left;
+}
+
+.otherOptions {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

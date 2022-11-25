@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>IMS</h1>
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="forms.html">Forms</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="settings.html">Settings</a>
+        <a href="login.html">Log Out</a>
+     </div>
+     <main>
+        <h1>CLASS STATISTICS</h1>
+        <hr>
+        <div class="information">
+            <div class="box" style="background-color: #63ADF2;">
+                <p>Classes Held:</p>
+                <span>124</span>
+            </div>
+            <div class="box" style="background-color: #A7CCED;">
+                <p>Classes Attended:</p>
+                <span>97</span>
+            </div>
+            <div class="box" style="background-color: #63ADF2;">
+                <p>Classes Absent:</p>
+                <span>27</span>
+            </div>
+            <div class="box" style="background-color: #A7CCED;">
+                <p>Classes Left:</p>
+                <span>24</span>
+            </div>
+            <div class="box" style="background-color: #63ADF2;">
+                <p>Classes Available to stay Absent:</p>
+                <span>12</span>
+            </div>
+            <div class="box" style="background-color: #A7CCED;">
+                <p>Present Streak</p>
+                <span>19</span>
+            </div>
+        </div>
+        <h1>TIME TABLE</h1>
+        <hr>
+        <div>
+            <div class="class">
+                <section class="timetable">
+                  <table>
+                    <thead>
+                      <tr class="timings">
+                        <th></th>
+                        <th>0900</th>
+                        <th>1000</th>
+                        <th>1100</th>
+                        <th>1200</th>
+                        <th>1300</th>
+                        <th>1400</th>
+                        <th>1500</th>
+                        <th>1600</th>
+                        <th>1700</th>
+          
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                         <td>Mon</td>
+                         <td class="class1">LEC[SL1]</td>
+                         <td></td>
+                         <td></td>
+                         <td class="class2">TUT[02}</td>
+                         <td class="2">TUT[02]</td>
+                         <td></td>
+                         <td></td>
+                         <td class="class3">LAB[B04]</td>
+                         
+                        </tr>
+                        <tr>
+                          <td>Tue</td>
+                          <td class="class1">LEC[SL1]</td>
+                          <td class="class1">LEC[SL1]</td>
+                          <td></td>
+                          <td class="class3">LAB[B04]</td>
+                          <td></td>
+                          <td class="class4">TUT[04]</td>
+                          <td></td>
+                          <td></td>
+                          <td class="class2">TUT[02]</td>
+                          
+                         
+                         </tr>
+                         <tr>
+                          <td>Wed</td>
+                          <td></td>
+                          <td class="class1">LEC[01]</td>
+                          <td></td>
+                          <td></td>
+                          <td class="class4">TUT[08]</td>
+                          <td></td>
+                          <td></td>
+                          <td class="class1">LEC[SL1]</td>
+                         
+                         </tr>
+                         <tr>
+                          <td>Thu</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td class="1">LEC[SL1]</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td class="4">TUT[D3]</td>
+                        
+                         </tr>
+                         <tr>
+                          <td>Fri</td>
+                          <td></td>
+                          <td class="class1">LEC[SL1]</td>
+                          <td class="class1">LEC[01]</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td class="class4">REC[01]</td>
+                          <td class="class5">LEC[01]</td>
+                        
+                         </tr>
+                      
+                    </tbody>
+                  </table>
+                    <!-- <ol class="timings">
+                      <li><time datetime="08:00">0800</time></li>
+                      <li>0900</li>
+                      <li>1000</li>
+                      <li>1100</li>
+                      <li>1200</li>
+                      <li>1300</li>
+                      <li>1400</li>
+                      <li>1500</li>
+                      <li>1600</li>
+                      <li>1700</li>
+                      <li>1800</li>
+                      <li>1900</li>
+                      <li>2000</li>
+                    </ol>
+                    <ol class="week">
+                      <li class="day">
+                        <span class="name">Mon</span>
+                        <div class="hour hour__10 class1">
+                          <div class="title">ST2334</div>
+                          <div>LEC[SL1]</div>
+                        </div>
+                        <div class="hour hour__12 class2">
+                          <div class="title">CFG1010</div>
+                          <div>TUT[02]</div>
+                        </div>
+                        <div class="hour hour__12 class2">
+                          <div class="title">CFG1010</div>
+                          <div>TUT[02]</div>
+                        </div>
+                      </li>
+                      <li class="day">
+                        <span class="name">Tue</span>
+                        <div class="hour hour__08 hour--two class3">
+                          <div class="title">CSC 101</div>
+                          <div>LEC[SL1]</div>
+                        </div>
+                        <div class="hour hour__12 class4">
+                          <div class="title">CSC 102</div>
+                          <div>TUT[02]</div>
+                        </div>
+                        <div class="hour hour__15 class3">
+                          <div class="title">CSC 105</div>
+                          <div>LAB[B04]</div>
+                        </div>
+                        <div class="hour hour__15 class3">
+                          <div class="title">CSC 103</div>
+                          <div>TUT[04]</div>
+                        </div>
+                      </li>
+                      <li class="day">
+                        <span class="name">Wed</span>
+                        <div class="hour hour__10 class4">
+                          <div class="title">CSC 104</div>
+                          <div>LEC[01]</div>
+                        </div>
+                        <div class="hour hour__14 class1">
+                          <div class="title">CSC 102</div>
+                          <div>TUT[08]</div>
+                        </div>
+                      </li>
+                      <li class="day">
+                        <span class="name">Thu</span>
+                        <div class="hour hour__10 class1">
+                          <div class="title">ST2334</div>
+                          <div>LEC[SL1]</div>
+                        </div>
+                        <div class="hour hour__14 hour--two class5">
+                          <div class="title">GES1011</div>
+                          <div>TUT[D3]</div>
+                        </div>
+                      </li>
+                      <li class="day">
+                        <span class="name">Fri</span>
+                        <div class="hour hour__08 class3">
+                          <div class="title">MA2213</div>
+                          <div>LEC[SL1]</div>
+                        </div>
+                        <div class="hour hour__10 hour--two class4">
+                          <div class="title">CS2020</div>
+                          <div>LEC[01]</div>
+                        </div>
+                        <div class="hour hour__13 class4">
+                          <div class="title">CS2020</div>
+                          <div>REC[01]</div>
+                        </div>
+                        <div class="hour hour__14 hour--two class5">
+                          <div class="title">GES1011</div>
+                          <div>LEC[01]</div>
+                        </div>
+                      </li>
+                    </ol> -->
+                  </section>
+            </div>
+        </div>
+     </main>
+</body>
+</html>

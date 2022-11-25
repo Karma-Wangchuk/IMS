@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form id="form" action="/" method="get" onsubmit="event.preventDefault(); isValid();" autocapitalize="on" autocomplete="off" >
+        <h3>Registration</h3>
+
+        <div class="form-field">
+        <label for="username">Enter your First Name</label>
+        <input type="text" placeholder="First Name" id="Fname" autocapitalize="sentences">
+        <small></small>
+        </div>    
+
+        <div class="form-field">
+        <label for="Lname">Enter your Last Name</label>
+        <input type="text" placeholder="Last Name" id="Lname" autocapitalize="sentences">
+        <small></small>
+        </div>
+
+        <div class="form-field">
+        <label for="email">Enter your Email</label>
+        <input type="email" placeholder="Email"  id="email">
+        </div>
+        
+        <div class="form-field">
+        <label for="password">Enter your Password</label>
+        <input type="password" placeholder="Password"  id="passwd">
+        <small></small>
+        </div>
+
+        <div class="form-field">
+        <label for="password">Re-enter your Password</label>
+        <input type="password" placeholder="confirm-password"  id="confirmpasswd">
+        <small></small>
+        </div>
+
+        <button class="button" type="submit" value="Register">Register</button>
+        <small></small>
+
+        <!-- <a href="index.html" class="login">Register</a> -->
+        <div class="social">
+          <div class="go"><a href="../index.html">Login</a></div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

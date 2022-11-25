@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body style="overflow: hidden;">
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form id="form" action="/" method="get" onsubmit="event.preventDefault(); isValid();">
+        <h3>Please Login Here</h3>
+
+        <div class="form-field">
+        <label for="username">Username/Email</label>
+        <input type="text" placeholder="Username" id="username" class="email">
+        <small></small>
+        </div>
+
+        <div class="form-field">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="passwd">
+        <small></small>
+        <br>
+        <a href="html/forgotPassword.html">Forgot Password ?</a>
+        </div>
+
+        <button class="button" type="submit" value="Login">Login</button>
+        <!-- <a href="home.html" class="login">Log In</a> -->
+        <a href="html/Register.html" class="login">Register</a>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i> <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-234409614%3A1668767440354630&authuser=0&continue=https%3A%2F%2Fmail.google.com&ec=GAlAFw&hl=en&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession">Google</a></div>
+          <div class="fb"><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/">Facebook</a> </div>
+        </div>
+    </form>
+    <script src="html/loginForm.js"></script>
+</body>
+</html>

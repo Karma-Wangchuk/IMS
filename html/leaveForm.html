@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Leave Form</title>
+        <link rel="stylesheet" href="css/forms.css">
+    </head>
+    <body>
+        <div class="banner"></div>
+        <div id="inner-data">
+            <h1 id="title">Leave form</h1>
+            <p id="description">
+            <p>Enter your details</p>
+            <p id="note">* A required field</p>
+            </p>
+            <form id="survey-form" method="GET" onsubmit="isValid()">
+                <div class="row">
+                    <div class="label-data">
+                        <label id="name-label" for="name">Name*</label>
+                    </div>
+                    <div class="input-data">
+                        <input id="name" class="input-area" type="text" name="name" placeholder="Enter your name" required><br>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label id="email-label" for="email">Email*</label>
+                    </div>
+                    <div class="input-data">
+                        <input id="email" class="input-area" type="text" name="email" placeholder="Enter your email"
+                        required><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label id="phone-label" for="phone number">Phone number*</label>
+                    </div>
+                    <div class="input-data">
+                    <input id="phone-number" class="input-area" type="tel" name="phone number" placeholder="Enter your phone number"
+                    required><br>
+                    <small></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label id="number-label" for="age">Age*</label>
+                    </div>
+                    <div class="input-data">
+                        <input id="number" class="input-area" type="number" name="age" placeholder="Enter your age" min="15"
+                        max="99" required><br>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label for="roles">What is your current role?</label>
+                    </div>
+                    <div class="input-data">
+                        <select id="dropdown" name="role" class="dropdown" required>
+                            <option value="" disabled selected>Please choose...</option>
+                            <option value="high school student">Student</option>
+                            <option value="college student">Lecturer</option>
+                            <option value="it worker">Faculty</option>
+                            <option value="non IT worker">Administration</option>
+                            <option value="maternity/parental leave">Staff</option>
+                            <option value="unemployed">Guest</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label for="experience">Is the leave for a hospital visit?</label><br>
+                    </div>
+                    <div class="input-data" required>
+                        <ul style="list-style: none;">
+                            <li class="radio"><label>Yes<input name="experience" value="1" type="radio" class="experience"></label></li>
+                            <li class="radio"><label>No<input name="experience" value="2" type="radio" class="experience"></label></li>
+                            <li class="radio"><label>Might Be<input name="experience" value="3" type="radio" class="experience"></label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label for="source">How long will you need the leave?</label><br>
+                    </div>
+                    <div class="input-data">
+                        <ul style="list-style: none;">
+                            <li class="checkbox"><label><input name="source" type="checkbox" value="personal recommendation">Under 1 day</label></li>
+                            <li class="checkbox"><input name="source" type="checkbox" value="public press">Under 2 days</label></li>
+                            <li class="checkbox"><input name="source" type="checkbox" value="TV">Under 3 days</label></li>
+                            <li class="checkbox"><input name="source" type="checkbox" value="Radio">Under 4 days</label></li>
+                            <li class="checkbox"><input name="source" type="checkbox" value="Our web">Under 5 days</label></li>
+                            <li class="checkbox"><input name="source" type="checkbox" value="Internet">Under 6 days</label></li>
+                            <li class="checkbox"><input name="source" type="checkbox" value="Facebook">Under 7 days</label></li>
+                            <li class="checkbox"><input name="source" type="checkbox" value="Linkedin">More than a week</label></li>
+                            <li class="checkbox"><input name="source" type="checkbox" value="Twitter">More than a month</label></li>
+                            <li class="checkbox"><input name="source" type="checkbox" value="Other">Longer Duration</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label for="textarea">Explain your reason for leave in detail.</label>
+                    </div>
+                    <div class="input-data">
+                        <textarea id="motivations" class="input-area" name="motivation" placeholder="Your response" required></textarea>
+                    </div>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+                <button id="submit" type="reset" onclick="redirect()">Cancel</button>
+            </form>
+        </div>
+        </body>
+        </html>
+        <script src="forms.js"></script>
+    </body>
+</html>

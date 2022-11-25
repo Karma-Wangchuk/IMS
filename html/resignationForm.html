@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Forms</title>
+        <link rel="stylesheet" href="css/forms.css">
+    </head>
+    <body>
+        <div class="banner"></div>
+            <div id="inner-data">
+            <h1 id="title">Resignation form</h1>
+            <p id="description">
+            <p>Enter your details.</p>
+            <p id="note">* A required field</p>
+            </p>
+            <form id="survey-form" method="GET">
+                <div class="row">
+                     <div class="label-data">
+                        <label id="name-label" for="name">Name*</label>
+                    </div>
+                    <div class="input-data">
+                        <input id="name" class="input-area" type="text" name="name" placeholder="Enter your name" required><br>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label id="email-label" for="email">Email*</label>
+                    </div>
+                    <div class="input-data">
+                        <input id="email" class="input-area" type="text" name="email" placeholder="Enter your email"
+                        required><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label id="phone-label" for="phone number">Phone number*</label>
+                    </div>
+                    <div class="input-data">
+                        <input id="phone-number" class="input-area" type="tel" name="phone number" placeholder="Enter your phone number"
+                        required><br>
+                        <small></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label id="number-label" for="age">Age*</label>
+                    </div>
+                    <div class="input-data">
+                        <input id="number" class="input-area" type="number" name="age" placeholder="Enter your age" min="15"
+                        max="99" required><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label for="roles">What is your current module?</label>
+                    </div>
+                    <div class="input-data">
+                        <select id="dropdown" name="role" class="dropdown" required>
+                            <option value="" disabled selected>Please choose...</option>
+                            <option value="high school student">Modern Database Design</option>
+                            <option value="college student">Fundamentals of Programming</option>
+                            <option value="it worker">Fundamentals of Computing</option>
+                            <option value="non IT worker">FrontEnd Dev</option>
+                            <option value="maternity/parental leave">Finance</option>
+                            <option value="unemployed">Staff</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label for="city">What is your position?</label>
+                    </div>
+                    <div class="input-data">
+                        <select id="dropdown" name="city" class="dropdown" required>
+                        <option value="" disabled selected>Please choose...</option>
+                        <option value="head">Head</option>
+                        <option value="teaching staff">Teaching Staff</option>
+                        <option value="others">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-data">
+                        <label for="textarea">What is your reason to resign, write in detail.</label>
+                    </div>
+                    <div class="input-data">
+                        <textarea id="motivations" class="input-area" name="motivation" placeholder="Your response"></textarea>
+                    </div>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+                <button id="submit" type="reset" onclick="redirect()">Cancel</button>
+            </form>
+        </div>
+        <script src="forms.js"></script>
+    </body>
+</html>
+<!-- partial -->
+</body>
+</html>

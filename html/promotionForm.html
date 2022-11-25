@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Forms</title>
+<link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+<div class="banner"></div>
+<div id="inner-data">
+<h1 id="title">Promotion From</h1>
+<p id="description">
+<p>Enter your details.</p>
+<p id="note">* A required field</p>
+</p>
+<form id="survey-form" method="GET">
+<div class="row">
+<div class="label-data">
+<label id="name-label" for="name">Name*</label>
+</div>
+<div class="input-data">
+<input id="name" class="input-area" type="text" name="name" placeholder="Enter your name" required><br>
+</div>
+</div>
+<div class="row">
+<div class="label-data">
+<label id="email-label" for="email">Email*</label>
+</div>
+<div class="input-data">
+<input id="email" class="input-area" type="text" name="email" placeholder="Enter your email"
+required><br>
+</div>
+</div>
+<div class="row">
+<div class="label-data">
+<label id="phone-label" for="phone number">Phone number*</label>
+</div>
+<div class="input-data">
+<input id="phone-number" class="input-area" type="tel" name="phone number" placeholder="Enter your phone number"
+ required><br>
+</div>
+</div>
+<div class="row">
+<div class="label-data">
+<label id="number-label" for="age">Age*</label>
+</div>
+<div class="input-data">
+<input id="number" class="input-area" type="number" name="age" placeholder="Enter your age" min="15"
+max="99" required><br>
+</div>
+</div>
+<div class="row">
+<div class="label-data">
+<label for="roles">What is your current role?</label>
+</div>
+<div class="input-data">
+<select id="dropdown" name="role" class="dropdown" required>
+<option value="" disabled selected>Please choose...</option>
+<option value="head of Department">Head of Department</option>
+<option value="Teaching staff">Teaching Staff</option>
+<option value="non-teaching staff">non-teaching staff</option>
+<option value="helper">Helper</option>
+<option value="intern">Intern</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="label-data">
+<label for="source">How many Years did you serve in your role?</label><br>
+</div>
+<div class="input-data">
+<ul style="list-style: none;">
+<li class="checkbox"><label><input name="source" type="checkbox" value="1">1 year</label></li>
+<li class="checkbox"><input name="source" type="checkbox" value="2">2 years</label></li>
+<li class="checkbox"><input name="source" type="checkbox" value="3">3 years</label></li>
+<li class="checkbox"><input name="source" type="checkbox" value="4">4 years</label></li>
+<li class="checkbox"><input name="source" type="checkbox" value="5">5 years</label></li>
+<li class="checkbox"><input name="source" type="checkbox" value="6">6 years</label></li>
+<li class="checkbox"><input name="source" type="checkbox" value="more">More than 6 years</label></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="label-data">
+<label for="textarea">Why do you think you should get this promotion?</label>
+</div>
+<div class="input-data">
+<textarea id="motivations" class="input-area" name="motivation" placeholder="Your response"></textarea>
+</div>
+</div>
+<button id="submit" type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
+<!-- partial -->
+</body>
+</html>
